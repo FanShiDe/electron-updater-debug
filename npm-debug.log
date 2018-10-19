@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/cuitfanshide/.nvm/versions/node/v7.6.0/bin/node',
+1 verbose cli   '/Users/cuitfanshide/.nvm/versions/node/v7.6.0/bin/npm',
+1 verbose cli   'login' ]
+2 info using npm@4.1.2
+3 info using node@v7.6.0
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:cuitfanshide',
+4 verbose adduser   name: 'cuitfanshide',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: '1154675139@qq.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2018-10-19T08:59:57.782Z' }
+5 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 16:59:57
+8 verbose request id d40071893611a66a
+9 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide
+10 http 409 https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide
+11 verbose headers { date: 'Fri, 19 Oct 2018 08:59:57 GMT',
+11 verbose headers   'content-type': 'application/json; charset=utf-8',
+11 verbose headers   'content-length': '65',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'x-current-requests': '1',
+11 verbose headers   vary: 'Origin',
+11 verbose headers   'x-readtime': '5' }
+12 verbose request invalidating /Users/cuitfanshide/.npm/registry.npm.taobao.org/-/user/org.couchdb.user_3Acuitfanshide on PUT
+13 verbose adduser update existing user
+14 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide?write=true
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 16:59:57
+17 http request GET https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide?write=true
+18 http 200 https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide?write=true
+19 verbose headers { date: 'Fri, 19 Oct 2018 08:59:57 GMT',
+19 verbose headers   'content-type': 'application/json; charset=utf-8',
+19 verbose headers   'content-length': '234',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-current-requests': '1',
+19 verbose headers   vary: 'Origin',
+19 verbose headers   etag: '"ea-8tpQmZV3yWgF9pfeTXDiM15HiPw"',
+19 verbose headers   'x-readtime': '4',
+19 verbose headers   via: 'npmtaobao21' }
+20 verbose adduser userobj { _id: 'org.couchdb.user:cuitfanshide',
+20 verbose adduser   name: 'cuitfanshide',
+20 verbose adduser   password: 'XXXXX',
+20 verbose adduser   email: '1154675139@qq.com',
+20 verbose adduser   type: 'user',
+20 verbose adduser   roles: [],
+20 verbose adduser   date: '2018-10-19T08:59:57.782Z' }
+21 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide/-rev/undefined
+22 verbose request updating existing user; sending authorization
+23 info attempt registry request try #1 at 16:59:57
+24 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide/-rev/undefined
+25 http 401 https://registry.npm.taobao.org/-/user/org.couchdb.user:cuitfanshide/-rev/undefined
+26 verbose headers { date: 'Fri, 19 Oct 2018 08:59:58 GMT',
+26 verbose headers   'content-type': 'application/json; charset=utf-8',
+26 verbose headers   'content-length': '47',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-current-requests': '1',
+26 verbose headers   vary: 'Origin',
+26 verbose headers   'x-readtime': '3' }
+27 verbose request invalidating /Users/cuitfanshide/.npm/registry.npm.taobao.org/-/user/org.couchdb.user_3Acuitfanshide on PUT
+28 verbose adduser back [ { Error: unauthorized Login first: -/user/org.couchdb.user:cuitfanshide/-rev/undefined
+28 verbose adduser       at makeError (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+28 verbose adduser       at CachingRegistryClient.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+28 verbose adduser       at Request._callback (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+28 verbose adduser       at Request.self.callback (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:186:22)
+28 verbose adduser       at emitTwo (events.js:106:13)
+28 verbose adduser       at Request.emit (events.js:192:7)
+28 verbose adduser       at Request.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+28 verbose adduser       at emitOne (events.js:96:13)
+28 verbose adduser       at Request.emit (events.js:189:7)
+28 verbose adduser       at IncomingMessage.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:1001:12) statusCode: 401, code: 'E401' },
+28 verbose adduser   { error: 'unauthorized', reason: 'Login first' },
+28 verbose adduser   '{"error":"unauthorized","reason":"Login first"}' ]
+29 warn adduser Incorrect username or password
+29 warn adduser You can reset your account by visiting:
+29 warn adduser
+29 warn adduser     https://npmjs.org/forgot
+30 verbose stack Error: unauthorized Login first: -/user/org.couchdb.user:cuitfanshide/-rev/undefined
+30 verbose stack     at makeError (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+30 verbose stack     at Request._callback (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+30 verbose stack     at Request.self.callback (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:186:22)
+30 verbose stack     at emitTwo (events.js:106:13)
+30 verbose stack     at Request.emit (events.js:192:7)
+30 verbose stack     at Request.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+30 verbose stack     at emitOne (events.js:96:13)
+30 verbose stack     at Request.emit (events.js:189:7)
+30 verbose stack     at IncomingMessage.<anonymous> (/Users/cuitfanshide/.nvm/versions/node/v7.6.0/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+31 verbose statusCode 401
+32 verbose cwd /Users/cuitfanshide/Documents/Van_Projects/electron-updater
+33 error Darwin 17.6.0
+34 error argv "/Users/cuitfanshide/.nvm/versions/node/v7.6.0/bin/node" "/Users/cuitfanshide/.nvm/versions/node/v7.6.0/bin/npm" "login"
+35 error node v7.6.0
+36 error npm  v4.1.2
+37 error code E401
+38 error unauthorized Login first: -/user/org.couchdb.user:cuitfanshide/-rev/undefined
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]
