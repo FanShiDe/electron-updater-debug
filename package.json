@@ -23,7 +23,7 @@
   "homepage": "https://github.com/FanShiDe/electron-updater",
   "license": "MIT",
   "main": "out/main.js",
-  "name": "electron-updater",
+  "name": "electron-updater-debug",
   "optionalDependencies": {},
   "publishConfig": {
     "tag": "next"

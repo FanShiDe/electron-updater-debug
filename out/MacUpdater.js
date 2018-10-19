@@ -170,9 +170,8 @@ class MacUpdater extends _AppUpdater().AppUpdater {
                   const pipeStream = readStream.pipe(response);
                   pipeStream.on('finish', () => {
                     setTimeout(() => {
-                      console.log('😄😄😄😄😄😄😄😄');
                       resolve([]);
-                    }, 10000);
+                    }, 12000);
                   });
                 } else {
                   _this._logger.warn(`${requestUrl} requested, but not supported`);
